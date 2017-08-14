@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Week 15 Power Coding Session</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Muli:400,600,700,900" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<header>
+		<h1>Week 15</h1>
+	</header>
+	<div class="section-wrapper">
+		<section class="questions">
+			<h1 class="section-header">Group Discussion Questions</h1>
+			<ol>
+				<li>What does MVC Stand for in the AngularJS framework?</li>
+				<li>What is the "model"? What does it do for us?</li>
+				<li>What is the "view"? What does it do for us?</li>
+				<li>What is the "controller"? What does it do for us?</li>
+				<li>What are directives, and what do they do?</li>
+				<li>What directive is used to connect AngularJS to your application?</li>
+				<li>What is the syntax for creating an expression, and what does an expression do?</li>
+				<li>What is the purpose of $scope?</li>
+				<li>What JavaScript logic does ng-repeat take care of for us?</li>
+				<li>How can we change content without refreshing/changing HTML pages?</li>
+			</ol>
+			<i class="icon fa fa-question-circle"></i>
+		</section>
+	</div>
+	<div class="section-wrapper">
+		<section class="exercises">
+			<h1 class="section-header">Exercises</h1>
+			<h4 class="note">Important: Make sure to add comments to your code to help your future self.</h4>
+			<ol>
+				<li>Create a copy of your template folder rename it to angulartemplate.</li>
+				<li>In your js folder, create a new folder named 'controllers'.</li>
+				<li>Go to <a href="angularjs.org">this site</a>. Click 'DOWNLOAD ANGULARJS', select the version that has (latest) in its name, and then select 'zip', and then hit download.</li>
+				<li>Open the zip file and find the file named 'angular.js'. Copy it and paste it into the js folder of your new angulartemplate.</li>
+				<li>In HTML: Add 'angular.js' to your template using a new script tag. This should go in the &lt;head&gt;.</li>
+				<li>In HTML: Update the html tag so it has an ng-app attribute - this is known as an Angular directive.</li>
+
+				<li>Create a copy of your new angulartemplate folder and rename it to week15exercise.</li>
+				<li>Drag this new folder into your 'week15' folder inside your 'codify' folder.</li>
+				<li>When working through these exercises, there are bits and pieces of the instructions that are deliberately left out. You should start thinking about what you THINK you will need in order to accomplish the request.</li>
+				<li>In JS: In your app.js file, create an Angular app module. Store this module in a variable. Make sure to also update your ng-app directive in HTML with the name of your Angular application - remember, that the variable and the application name are NOT the same thing (though they can be the same word(s))</li>
+				<li>In JS: On a new line, using the variable that your stored your app module in, create a controller.</li>
+				<li>In JS: Add a string of data to the controller's $scope with the text: "This is an expression".</li>
+				<li>In HTML: Create a div and an h1 element. Give the div the ng-controller attribute and make its value equal to the name of your controller.</li>
+				<li>In JS: Using an Angular expression (the {}), display the text "This is an expression" in your h1.</li>
+				<li>In HTML: Create two inputs tags for the user to give us 2 numbers, and a div to display the resulting output.</li>
+				<li>In HTML: Using two-way data binding, make it so when the user updates the values in the input elements the information in the div also updates. The output should be the two numbers multipled by each other.</li>
+				<li>In HTML: Add an Angular filter to the expression to change how the data is displayed.</li>
+				<li>In JS: Create an array of objects and store it using $scope.</li>
+				<li>In HTML: Using the ng-repeat directive, display all of the items from the array in separate HTML elements.</li>
+			</ol>
+
+			<h4 class="note">Once you have completed these exercises add them to Github.</h4>
+
+			<a href="week15exercises.zip" class="link">Download Completed Week 15 Exercises</a>
+			<i class="icon fa fa-code"></i>
+		</section>
+	</div>
+	<div class="section-wrapper">
+		<section class="project">
+			<h1 class="section-header">Project</h1>
+			<p>Today we will convert an existing multipage website into a single page app using AngularJS and AngularJS Routing.</p>
+			<h4 class="steps">Steps For Making a Single Page AngularJS Project:</h4>
+			<ol>
+				<li>Download the <a href="http://codifyacademy.com/litmos/wk15/routesOriginal.zip">Original Template</a>.</li>
+				<li>Start by adding in AngularJS and AngularJS Routing files to your HTML.</li>
+				<li>In JS: Create a basic angular.module with the name of "multipageApp", add in "ngRoute" (inject/include angular routing into that module) inside the square brackets.</li>
+				<li>In HTML: Set the ng-app directive equal to the name of your app "multipageApp", create a div and add the ng-view directive to that div.</li>
+				<li>In JS: Add in route configuration for the 3 "pages" (views) that will be needed.</li>
+				<li>In the Project Folder: Create a new folder called views, and add 3 new .html files one for each </li>
+			</ol>
+			<div>
+				<h4 class="steps">Working Project Examples</h4>
+				<a href="http://codifyacademy.com/litmos/wk15/routes/#/" class="link" target="_blank">Routing Example</a>
+				<a href="http://codifyacademy.com/litmos/wk15/angularecommerce/#/" class="link" target="_blank">E-Commerce Example</a>
+			</div>
+
+			<i class="icon fa fa-briefcase"></i>
+		</section>
+	</div>
+
+
+</body>
+</html>

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Week 7 Power Coding Session</title>
+
+	<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Muli:400,600,700,900" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<header>
+		<h1>Week 7</h1>
+	</header>
+	<div class="section-wrapper">
+		<section class="questions">
+			<h1 class="section-header">Group Discussion Questions</h1>
+			<ol>
+				<li>What are 3 ways to display JavaScript?</li>
+				<li>What is the difference between alert() and prompt()?</li>
+				<li>What are 4 variable types?</li>
+				<li>What is concatenation and what does it do?</li>
+				<li>What does an if conditional test for?</li>
+				<li>What is an else statement used for?</li>
+				<li>List 8 comparison operators.</li>
+				<li>List 3 logical operators.</li>
+				<li>What is the standard for loop syntax?</li>
+				<li>What is the standard function syntax?</li>
+			</ol>
+			<i class="icon fa fa-question-circle"></i>
+		</section>
+	</div>
+	<div class="section-wrapper">
+		<section class="exercises">
+			<h1 class="section-header">Exercises</h1>
+			<h4 class="note">Important: Make sure to add comments to your code to help your future self.</h4>
+			<ol>
+				<li>Create a copy of your template folder and rename it to week7exercise.</li>
+				<li>Drag this new folder into your 'week7' folder inside your 'codify' folder.</li>
+				<li>For these exercises, before you actually check to see what the outcome is, think it through and then write your answer down as a comment in your code. Then check the code and see if you got it right.</li>
+				<li>If you did get the answer right - great! If not, add some more comments about what DID happen, and how it now makes sense to you.</li>
+				<li>Determine what variable type each one is:
+					<ul>
+						<li style="padding-top:10px;">
+							<code class="prettyprint">var testOne = "What kind of variable is this?";</code>
+						</li>
+						<li>
+							<code class="prettyprint">var testTwo = 256;</code>
+						</li>
+						<li>
+							<code class="prettyprint">var testThree = ["What", "kind", "of", "variable", "am", "I?"];</code>
+						</li>
+						<li>
+							<code class="prettyprint">var testFour = false;</code>
+						</li>
+						<li>
+							<code class="prettyprint">var testFive = [1, 2, 5];</code>
+						</li>
+						<li>
+							<code class="prettyprint">var testSix = 128;</code>
+						</li>
+						<li>
+							<code class="prettyprint">var testSeven = "What am I?"</code>
+						</li>
+						<li>
+							<code class="prettyprint">var testEight = true;</code>
+						</li>
+						<li>
+							<code class="prettyprint">var testNine = ["What kind of variable is this?", 2, 5, 19];</code>
+						</li>
+					</ul>
+				</li>
+
+				<li>Concatenation (combining things in JavaScript):
+					<div class="codewrap">
+						<pre>Given these variables</pre>
+						<code class="prettyprint">
+							    var string1 = "Hello ";
+							<br>var string2 = "my name is ";
+							<br>var string3 = "your name here";
+							<br>var combinedStrings = string1 + string2 + string3;
+						</code>
+						<pre>What do you expect the console message to be?</pre>
+						<code class="prettyprint">console.log(combinedStrings);</code>
+					</div>
+
+					<div class="codewrap">
+						<pre>Given these variables</pre>
+						<code class="prettyprint">
+							    var num1 = 8;
+							<br>var num2 = 52;
+							<br>var num3 = 60;
+							<br>var combinedNumbers = num1 + num2 + num3;
+						</code>
+						<pre>What do you expect the console message to be?</pre>
+						<code class="prettyprint">console.log(combinedNumbers);</code>
+					</div>
+
+					<div class="codewrap">
+						<pre>Given these variables</pre>
+						<code class="prettyprint">
+							    var mixedNum1 = 10;
+							<br>var mixedString1 = "ten";
+							<br>var mixedNum2 = "10";
+							<br>var mixedConcatenation = mixedNum1 + mixedNum2 + mixedString1;
+						</code>
+						<pre>What do you expect the console message to be?</pre>
+						<code class="prettyprint">console.log(mixedConcatenation);</code>
+					</div>
+				</li>
+				<li>If / Else If / Else - Checking for True or False
+			    <div class="codewrap">
+						<pre>Given these variables</pre>
+						<code class="prettyprint">
+									var num4 = 5;
+							<br>var num5 = 0;
+						</code>
+						<pre>What do you expect the console message to be?</pre>
+						<code class="prettyprint">
+							if (num4 > 1) {
+							<br><span class="pd-lf-20">console.log("Num4 is greater than 1");</span>
+							<br>} else {
+							<br><span class="pd-lf-20">console.log("Num4 is NOT greater than 1");</span>
+							<br>};
+						</code>
+					</div>
+
+					<div class="codewrap">
+						<pre>Given these variables</pre>
+						<code class="prettyprint">
+									var num4 = 5;
+							<br>var num5 = 0;
+						</code>
+						<pre>What do you expect the console message to be?</pre>
+						<code class="prettyprint">
+							if (num4 < num5 || num4 === num5 && true) {
+							<br><span class="pd-lf-20">console.log("If statement ran!");</span>
+							<br>} else {
+							<br><span class="pd-lf-20">console.log("Else statement ran");</span>
+							<br>};
+						</code>
+					</div>
+
+					<div class="codewrap">
+						<pre>Given these variables</pre>
+						<code class="prettyprint">
+									var num4 = 5;
+							<br>var num5 = 0;
+						</code>
+						<pre>What do you expect the console message to be?</pre>
+						<code class="prettyprint">
+							if (num4 < num5 || num4 === num5) {
+							<br><span class="pd-lf-20">console.log("If statement ran!");</span>
+							<br>} else if (num5 === "0" || true) {
+							<br><span class="pd-lf-20">console.log("Else if statement ran");</span>
+							<br>} else {
+							<br><span class="pd-lf-20">console.log("Else statement ran");</span>
+							<br>};
+						</code>
+					</div>
+
+					<div class="codewrap">
+						<pre>Given these variables</pre>
+						<code class="prettyprint">
+									var num4 = 5;
+							<br>var num5 = 0;
+						</code>
+						<pre>What do you expect the console message to be?</pre>
+						<code class="prettyprint">
+							if (num4 > num5 && num4 === num5) {
+							<br><span class="pd-lf-20">console.log("If statement ran!");</span>
+							<br>} else if (num5 === "0" || true) {
+							<br><span class="pd-lf-20">console.log("Else if statement ran");</span>
+							<br>} else {
+							<br><span class="pd-lf-20">console.log("Else statement ran");</span>
+							<br>};
+						</code>
+					</div>
+				</li>
+				<li>For Loop - Looking into Arrays
+					<div class="codewrap">
+						<pre>Given this variable</pre>
+						<code class="prettyprint">
+							var array1 = ["this", "is", "an", "array", "of", "strings"];
+						</code>
+						<pre>What do you expect the console message to be?</pre>
+						<code class="prettyprint">
+									for (var i = 0; i < array1.length; i = i + 1) {
+									<br><span class="pd-lf-20">console.log(i, array1[i]);</span>
+									<br>};
+						</code>
+					</div>
+
+					<div class="codewrap">
+						<pre>Given these variables</pre>
+						<code class="prettyprint">
+							var array2 = [1, 3, 5, 7, 9];
+							<br>var total = 0;
+						</code>
+						<pre>What do you expect the console message to be?</pre>
+						<code class="prettyprint">
+									for (var i = 0; i < array2.length; i = i + 1) {
+									<br><span class="pd-lf-20">total = total + array2[i];</span>
+									<br>};
+									<br>console.log(total);
+						</code>
+					</div>
+
+					<div class="codewrap">
+						<pre>Given this variable</pre>
+						<code class="prettyprint">
+							var array3 = [11, 33, 55, 77, 99];
+						</code>
+						<pre>What do you expect the console message to be?</pre>
+						<code class="prettyprint">
+									for (var i = 0; i < array2.length; i = i + 1) {
+									<br><span class="pd-lf-20">if(array3[i] >= 55 || array3[i] <= 100){</span>
+									<br><span class="pd-lf-40">console.log(array3, array3[i]);</span>
+									<br><span class="pd-lf-20">};</span>
+									<br>};
+						</code>
+					</div>
+				</li>
+				<li>Functions - making things happen
+					<div class="codewrap">
+						<pre>Given this function</pre>
+						<code class="prettyprint">
+							function testStuff (a, b) {
+							<br><span class="pd-lf-20">if(a > 25 && b < 100){</span>
+							<br><span class="pd-lf-40">console.log(a + " is greater than 25 and " + b + "is less than 100");</span>
+							<br><span class="pd-lf-20">} else {</span>
+							<br><span class="pd-lf-40">console.log(a + " is NOT greater than 25 or " + b + "is NOT less than 100");</span>
+							<br><span class="pd-lf-20">};</span>
+							<br>};
+						</code>
+						<pre>What do you expect the console message to be for each?</pre>
+						<code class="prettyprint">
+							testStuff(10, 101);
+							<br>testStuff(26, 99);
+							<br>testStuff(100, 25);
+						</code>
+					</div>
+
+					<div class="codewrap">
+						<pre>Given this function</pre>
+						<code class="prettyprint">
+							function testStuff2(c, d) {
+							<br><span class="pd-lf-20">if(c == 25){</span>
+							<br><span class="pd-lf-40">console.log(c + " is equal to 25");</span>
+							<br><span class="pd-lf-20">} else if(d <= 100){</span>
+							<br><span class="pd-lf-40">console.log(d + " is less than or equal to 100");</span>
+							<br><span class="pd-lf-20">} else {</span>
+							<br><span class="pd-lf-40">console.log("Neither if or else if statement ran");</span>
+							<br><span class="pd-lf-20">};</span>
+							<br>};
+						</code>
+						<pre>What do you expect the console message to be?</pre>
+						<code class="prettyprint">
+							testStuff2(26, 101);
+							<br>testStuff2(25, 99);
+							<br>testStuff2(102, 24);
+						</code>
+					</div>
+				</li>
+			</ol>
+
+			<h4 class="note">Once you have completed these exercises add them to Github.</h4>
+
+			<a href="week7exercises.zip" class="link">Download Completed Week 7 Exercises</a>
+			<i class="icon fa fa-code"></i>
+		</section>
+	</div>
+	<div class="section-wrapper">
+		<section class="project">
+			<h1 class="section-header">Project</h1>
+			<h4 class="note">Important: Make sure to add comments to your code to help your future self.</h4>
+			<p>This week we will build a website for an individual using Bootstrap. Before starting this project, you will need to decide on what type of individual portfolio you want to build. This is a great time to build a website for a family member or friend. You can use this as a reference and you'll added to your resume as a professional developer! Make sure that whatever you decide to build, you're passionate about it.</p>
+			<h4 class="steps">Steps For Making a Portfolio Website</h4>
+			<ol>
+				<li>Decide an individual you want to build a website for.</li>
+				<li>List out all the functionality you want to include in the portfolio website. E.X. About me, contact us, services, testimonials, social media, etc.</li>
+				<li>Paper prototype out how the website will look.</li>
+				<li>Google "free bootstrap template", and choose one that looks similar to your paper prototype.</li>
+				<li>Download the template &amp; uncompress(unzip) the folder then start manipulating the template to look like your paper prototype!</li>
+				<li>Make sure to grab content from somewhere, don't spend much time finding/creating content for the website, we just need to make sure it looks good!</li>
+			</ol>
+			<i class="icon fa fa-briefcase"></i>
+		</section>
+	</div>
+
+
+</body>
+</html>
